@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessUI Task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-cover">
+        <div>
+            <div class="player">
+                <div class="player-profile">
+                    <div class="player-img">
+                        <img src="assets/black_400.jpg" alt="Opponent avatar">
+                    </div>
+                    <div class="player-nickname">Opponent</div>
+                </div>
+                <div class="player-timer">15:00</div>
+            </div>
+            <div class="board">
+                <img src="assets/standardboard.webp" alt="">
+            </div>
+            <div class="player">
+                <div class="player-profile">
+                    <div class="player-img">
+                        <img src="assets/mypic.jpg" alt="Your Avatar">
+                    </div>
+                    <div class="player-nickname">e4drcf</div>
+                </div>
+                <div class="player-timer">15:00</div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="tabs">
+                <button id="play-tab" class="play-tab tab" tabindex="1">Play</button>
+                <button id="archive-tab" class="archive-tab tab active-tab" tabindex="2">Archive</b>
+            </div>
+            <div id="play" class="tabcontent">
+                <form class="play" onsubmit="return false">
+                    <label class="visually-hidden" for="mode">Choose a mode</label>
+                    <select id="mode" name="mode" tabindex="3">
+                    <option value="15 | 10">15 | 10</option>
+                    <option value="10 min">10 min</option>
+                    <option value="5 min" selected>5 min</option>
+                    <option value="3 | 2">3 | 2</option>
+                    <option value="2 | 1">2 | 1</option>
+                    </select>
+                    <button tabindex="4">Play</button>
+                </form>
+                <div class="carousel"></div>
+                
+            </div>
+            <div id="archive" class="tabcontent">
+                <ul class="archive">
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">fghert</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">100 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="record">
+                            <div class="players">
+                                <div class="match-player looser">
+                                    <img src="assets/white-pawn.svg" alt="">
+                                    <div class="player-nickname">weryLongNickname</div>
+                                </div>
+                                <div class="match-player winner">
+                                    <img src="assets/black-pawn.svg" alt="">
+                                    <div class="player-nickname">e4drcf</div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="moves-number">14 moves</div>
+                                <div class="date">01.04.2020</div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
