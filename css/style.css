@@ -59,6 +59,11 @@ select {
   font: inherit;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -70,6 +75,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#34322E), to(#65635F));
   background: linear-gradient(180deg, #34322E 0%, #65635F 100%);
   font-family: "Roboto";
+  font-display: swap;
 }
 
 .game-cover {
@@ -175,7 +181,7 @@ body {
   font-weight: bold;
   font-size: 15px;
   line-height: 35px;
-  color: #DBD9D7;
+  color: White;
   height: 35px;
   background: #888888;
 }
